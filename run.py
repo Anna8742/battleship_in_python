@@ -10,9 +10,19 @@ print(rules)
 grid = {'A' : 0, 'B' : 1, 'C' : 2, 'D' : 3, 'E' : 4, 'F' : 5, 'G' : 6, 'H' : 7, 'I' : 8, 'J' : 9}
 
 
-first_board = [[" "]] * 9 for x in range(9)]
+first_board =  [[" "] * 9 for x in range(9)]
 
-record_board = [[" "]] * 9 for x in range(9)]
+record_board = [[" "] * 9 for x in range(9)]
+
+def create_board(b):
+    print('  A B C D E F G G I J ')
+    print('  +-+-+-+-+-+-+-+-+-+ ')
+    number = 1
+    for row in b: 
+        print("%d|%s|" % (number, "|".join(row)))
+        number += 1
+
+create_board(first_board)
 
 
 
