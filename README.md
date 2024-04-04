@@ -9,9 +9,8 @@ Players try to sink each other's battleships by entering row number 1-10 and col
 ![Screenshot 2024-04-04 at 19 05 47](https://github.com/Anna8742/battleship_in_python/assets/31070626/8c59110a-b7c4-450e-a8db-b0e5ea232312)
 
 FEATURES
-- Simplified Battleship game written in Python
+- Simplified Battleship game written in Python to play against the computer
 - Straightforward user interface
-- Working battleships game for a single user to play against the computer
 
 EXISTING FEATURES
 - The game starts by providing instructions what are the rules of the game
