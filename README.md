@@ -29,9 +29,39 @@ EXISTING FEATURES
 ![Screenshot 2024-04-04 at 19 21 37](https://github.com/Anna8742/battleship_in_python/assets/31070626/883ddf0d-0c8e-46fa-b678-613aa0b80c22)
 
 
+
+
 FEATURES LEFT TO IMPLEMENT
 - Possibility to choose the size of grid
 
 TESTING
-- Manual testing
-- 
+- Manual testing in case wrong input 
+- Tested the code with Snyk, no errors returned in run.py
+  <img width="1126" alt="Screenshot 2024-04-04 at 19 29 53" src="https://github.com/Anna8742/battleship_in_python/assets/31070626/b7092d36-b1f4-4f86-95b6-35727eedec31">
+- Tested the code with OnlineGDB, no errors found
+
+TECHNOLOGIES USED
+
+Languages: Python
+Programs: 
+Github - used for version control and hosting
+Heroku - used for app deployment
+
+DEPLOYMENT
+
+The site was deployed to Heroku
+
+The live link can be found here - https://battleship011-719e43038231.herokuapp.com/
+
+CREDIT
+The instruction how to play the game comes from  Wikipedia https://en.wikipedia.org/wiki/Battleship
+Inspiration how to create the website from youtube tutorial:
+How to Code Battleship in Python - Single Player Game by Knowledge Mavens
+https://www.youtube.com/watch?v=tF1WRCrd_HQ&ab_channel=KnowledgeMavens
+
+Acknowledgments:
+
+My mentor Antonio for his support and advice. The Code Institute slack community for their quick responses and very helpful feedback!
+
+
+  
