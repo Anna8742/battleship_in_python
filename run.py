@@ -120,3 +120,46 @@ def main():
         player_misses = set()
         computer_hits = set()
         computer_misses = set()
+
+        # Game loop
+        while len(player_hits) < 5 and len(computer_hits) < 5 and len(player_misses) < 10:
+            # Player's turn
+            print("\nPlayer's Turn:")
+            print("\nComputer's Primary Board: ")
+            create_primary_board(computer_board, hits=player_hits, misses=player_misses)
+            user_guess_coord = user_guess()
+            if check_result(user_guess_coord, computer_board, computer_hits, computer_misses):
+                print("\nPlayer's Primary Board: ")
+                create_primary_board(player_board, ships=player_ships, hits=computer_hits, misses=computer_misses)
+            else:
+                print("\nPlayer's Primary Board: ")
+                create_primary_board(player_board, ships=player_ships, hits=computer_hits, misses=computer_misses)
+
+            if len(computer_hits) == 5:
+                print("\nCongratulations! You sank all the computer's battleships!")
+                break
+
+            # Computer's turn
+            print("\nComputer's Turn:")
+            computer_guess_coord = AI_guess()
+            print("Computer guesses:", computer_guess_coord)
+            if check_result(computer_guess_coord, player_board, player_hits, player_misses):
+                print("\nPlayer's Primary Board: ")
+                create_primary_board(player_board, ships=player_ships, hits=player_hits, misses=player_misses)
+            else:
+                print("\nPlayer's Primary Board: ")
+                create_primary_board(player_board, ships=player_ships, hits=player_hits, misses=player_misses)
+
+            if len(player_hits) == 5:
+                print("\nOops! All your battleships have been sunk by the computer!")
+                break
+
+        # Play again
+        play_again = input("\nDo you want to play again? (yes/no): ").strip().lower()
+        if play_again != "yes":
+            print("Thank you for playing! Goodbye!")
+            break
+
+
+if __name__ == "__main__":
+    main()
