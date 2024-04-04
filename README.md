@@ -45,6 +45,8 @@ Languages: Python
 Programs: 
 Github - used for version control and hosting
 Heroku - used for app deployment
+Snyk - used for testing
+onlineGDB - used for testing
 
 DEPLOYMENT
 
