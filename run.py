@@ -1,7 +1,7 @@
 from random import randint
 
 # Rules of the game
-rules = """BATTLESHIPS GAME RULES: \n\nThe game is played on grids on which each player's fleet of battleships are marked.. 
+rules = """BATTLESHIPS GAME RULES: \n\nThe game is played on grids on which each player's fleet of battleships are marked. 
 \nThe grids are square 10x10, and the location of the fleets are concealed from the other player.
 \nPlayers call shots at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.
 \nIt's a single user game to play against the computer. """
