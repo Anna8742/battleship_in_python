@@ -62,3 +62,12 @@ def user_guess():
         print("Incorrect input, try again.")
         column = input("Enter a letter from A to J: ").upper()
     return row, grid[column]
+
+def AI_guess():
+    """
+    Function to generate a random guess for the computer's turn. 
+    It returns of tuple of the computer's guess
+    """
+    row = randint(0, 9)
+    column = randint(0, 9)
+    return row, column
