@@ -55,7 +55,9 @@ The site was deployed to Heroku
 The live link can be found here - https://battleship011-719e43038231.herokuapp.com/
 
 CREDIT
-The instruction how to play the game comes from  Wikipedia https://en.wikipedia.org/wiki/Battleship
+
+The instruction on how to play the game comes from  Wikipedia https://en.wikipedia.org/wiki/Battleship
+
 Inspiration how to create the website from youtube tutorial:
 How to Code Battleship in Python - Single Player Game by Knowledge Mavens
 https://www.youtube.com/watch?v=tF1WRCrd_HQ&ab_channel=KnowledgeMavens
