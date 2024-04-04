@@ -37,11 +37,14 @@ def create_primary_board(board, ships=None, hits=None, misses=None):
         display_row = []
         for j, cell in enumerate(row):
             if (i, j) in ships:
-                display_row.append("S")  # Ship
+                # Ship
+                display_row.append("S")  
             elif (i, j) in hits:
-                display_row.append("H")  # Hit
+                # Hit
+                display_row.append("H")  
             elif (i, j) in misses:
-                display_row.append("M")  # Miss
+                # Miss
+                display_row.append("M")  
             else:
                 display_row.append(cell)
         print("%2d|%s|" % (number, "|".join(display_row)))
@@ -95,7 +98,7 @@ def place_battleships(board):
 This funcion locates battleships on the board. 
 It takes the board as an argument and returns a set of the placed ships.
 """
-    ships = set()  # Define ships set
+    ships = set()  
     for _ in range(5):
         row, column = randint(0, 9), randint(0, 9)
         while board[row][column] == "X":
@@ -103,3 +106,11 @@ It takes the board as an argument and returns a set of the placed ships.
         board[row][column] = "X"
         ships.add((row, column))
     return ships
+
+def main():
+    """
+    Main function to run all functions and allow to play multiple games
+    """
+    while True:
+        # Initialize player's ships
+        player_ships = place_battleships(player_board)
