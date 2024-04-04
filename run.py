@@ -71,3 +71,20 @@ def AI_guess():
     row = randint(0, 9)
     column = randint(0, 9)
     return row, column
+
+def check_result(guess, board, hits, misses):
+"""
+Function to check the result of a guess made by computer and player. 
+It takes arguments: guess, board - to check against it, sets of hits and misses.
+It updates sets based on the result and returns True for a hit and False for a miss.
+"""
+    row, column = guess
+    if board[row][column] == "X":
+        print("Hit")
+        hits.add((row, column))
+        board[row][column] = "H"
+        return True
+    else:
+        print("Miss! ")
+        misses.add((row, column))
+        return False
