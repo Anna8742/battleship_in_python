@@ -88,3 +88,18 @@ It updates sets based on the result and returns True for a hit and False for a m
         print("Miss! ")
         misses.add((row, column))
         return False
+
+
+def place_battleships(board):
+"""
+This funcion locates battleships on the board. 
+It takes the board as an argument and returns a set of the placed ships.
+"""
+    ships = set()  # Define ships set
+    for _ in range(5):
+        row, column = randint(0, 9), randint(0, 9)
+        while board[row][column] == "X":
+            row, column = randint(0, 9), randint(0, 9)
+        board[row][column] = "X"
+        ships.add((row, column))
+    return ships
