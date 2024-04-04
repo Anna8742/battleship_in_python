@@ -114,3 +114,9 @@ def main():
     while True:
         # Initialize player's ships
         player_ships = place_battleships(player_board)
+
+        # Initialize hits and misses sets for both player and computer
+        player_hits = set()
+        player_misses = set()
+        computer_hits = set()
+        computer_misses = set()
