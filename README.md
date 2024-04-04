@@ -1,32 +1,14 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+BATTLESHIP
 
-Welcome,
+BATTLESHIP is a website providing a possibility to play Battleship game against the computer. 
+The purpose of the game is to sink each other's battleships.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+The game is played on a 10x10 grid, where each player has a fleet of 5 battleships, which are hiddent from the opponent.
+Players try to sink each other's battleships by entering row number 1-10 and columnt letters A - J. Each player has ten attempts. The game runs until all attempts are run out, or until one player sinsk all of the opponent's battleships. The computer will make its guesses automatically. After the game ends, the user will be prompted to play again or exit.
 
-## Reminders
+![Screenshot 2024-04-04 at 19 05 47](https://github.com/Anna8742/battleship_in_python/assets/31070626/8c59110a-b7c4-450e-a8db-b0e5ea232312)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+FEATURES
+- Simplified Battleship game written in Python
+- Straightforward user interface
+- Working battleships game for a single user to play against the computer
