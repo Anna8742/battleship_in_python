@@ -7,12 +7,13 @@ rules = """BATTLESHIPS GAME RULES: \n\nThe game is played on grids on which each
 \nIt's a single user game to play against the computer. """
 print(rules)
 
+# Mapping of letters to grids
 grid = {'A' : 0, 'B' : 1, 'C' : 2, 'D' : 3, 'E' : 4, 'F' : 5, 'G' : 6, 'H' : 7, 'I' : 8, 'J' : 9}
 
 
-first_board =  [[" "] * 9 for x in range(9)]
+computer_board =  [[" "] * 9 for x in range(9)]
 
-record_board = [[" "] * 9 for x in range(9)]
+player_board = [[" "] * 9 for x in range(9)]
 
 def create_board(b):
     print('  A B C D E F G G I J ')
