@@ -34,8 +34,8 @@ FEATURES LEFT TO IMPLEMENT
 - Possibility to choose the size of grid
 
 TESTING
-- Manual testing in case wrong input 
-- Tested the code with Snyk, no errors returned in run.py
+- Manual testing
+- Testing Snyk, no errors returned in run.py
   <img width="1126" alt="Screenshot 2024-04-04 at 19 29 53" src="https://github.com/Anna8742/battleship_in_python/assets/31070626/b7092d36-b1f4-4f86-95b6-35727eedec31">
 - Tested the code with OnlineGDB, no errors found
 
