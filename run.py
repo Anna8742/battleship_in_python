@@ -7,6 +7,12 @@ rules = """BATTLESHIPS GAME RULES: \n\nThe game is played on grids on which each
 \nIt's a single user game to play against the computer. """
 print(rules)
 
+# Constants
+BOARD_SIZE = 10
+NUMBER_OF_SHIPS = 5
+
+
+
 # Mapping of letters to grids
 grid = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9}
 
